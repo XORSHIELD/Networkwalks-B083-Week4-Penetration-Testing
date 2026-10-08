@@ -236,5 +236,3 @@ LinkedIn: https://www.linkedin.com/in/xorshield/
 **Program Name:** Networkwalks | **Week:** 04 | **Project:** Black-Box Penetration Testing — Mediroza General Hospital | **Repository:** GitHub
 
 
-[README (1).md](https://github.com/user-attachments/files/33218506/README.1.md)
-
