@@ -1,4 +1,4 @@
-# 🔒 Mediroza General Hospital — Black-Box Penetration Test
+<img width="1920" height="998" alt="2 screenshot-login-portal" src="https://github.com/user-attachments/assets/9232ef2d-eed4-40cd-812a-30863d7692bb" /># 🔒 Mediroza General Hospital — Black-Box Penetration Test
 
 **A full black-box engagement tracing an attack chain from login bypass to a critical data exposure**
 
@@ -56,7 +56,8 @@ The engagement traces a full attack chain — from open-source recon, through an
 
 ## 🏗️ Attack Chain Overview
 
-<img width="1345" height="618" alt="Attack chain overview diagram" src="REPLACE-WITH-YOUR-SCREENSHOT-URL" />
+<img width="1915" height="1005" alt="1  screenshot-robot" src="https://github.com/user-attachments/assets/c1781194-4a3f-46e6-8e8f-c9bf816bcd28" />
+
 
 The assessment moved through four milestones: initial access, data extraction, deeper server-side exposure, and final reporting.
 
@@ -82,7 +83,12 @@ The assessment moved through four milestones: initial access, data extraction, d
 5. Bypassed authentication using a classic `admin' --` payload, logging in without a valid password.
 6. Downloaded 3 confidential patient PDF reports from the portal.
 
-<img width="1919" height="1034" alt="Login bypass proof" src="REPLACE-WITH-YOUR-SCREENSHOT-URL" />
+
+<img width="1920" height="998" alt="2 screenshot-login-portal" src="https://github.com/user-attachments/assets/422f41fb-541e-4878-8c88-dc9c961a009f" />
+<img width="1920" height="1011" alt="3 screenshot-SQL-Injection" src="https://github.com/user-attachments/assets/87553324-0847-490f-bc5f-833f744ad4f9" />
+<img width="1920" height="1034" alt="4 screenshot-patient-report" src="https://github.com/user-attachments/assets/7f3dc241-10ad-4567-a83d-6a3a4cf33c3f" />
+
+
 
 ---
 
@@ -92,10 +98,20 @@ The assessment moved through four milestones: initial access, data extraction, d
 2. Cracked two of the three PDFs against a common-password wordlist.
 3. The third PDF resisted the default wordlist — switched to a larger list (JTR), which succeeded.
 4. Decrypted the third file with `qpdf` to produce a clean, unlocked copy for further analysis.
+<img width="1920" height="1014" alt="11 screenshot-pdf3-password-hash" src="https://github.com/user-attachments/assets/c8318c17-303d-44e3-b5a5-0ae5a6fb0df4" />
+<img width="1920" height="1009" alt="10 screenshot-pdf2-accessed" src="https://github.com/user-attachments/assets/d3af7a5a-75a4-43f6-b38e-40380aa3bde0" />
+<img width="1920" height="1017" alt="9 screenshot-pdf2-password-cracked" src="https://github.com/user-attachments/assets/aa0c6c1b-6d89-45e5-9de2-27a399276ec9" />
+<img width="1920" height="1018" alt="8 screenshot-pdf2-password-hash" src="https://github.com/user-attachments/assets/d04f0c7c-d2ef-4cdb-8e05-d0392b9e6c05" />
+<img width="1920" height="1014" alt="7 screenshot-pdf1-accessed" src="https://github.com/user-attachments/assets/ab51df1f-a96e-4bb8-8880-1e2bfe09d478" />
+<img width="1920" height="1015" alt="6 screenshot-pdf1-password-cracked" src="https://github.com/user-attachments/assets/f9ba4c54-b5e8-4ea8-91fc-1273e366d57c" />
+<img width="1920" height="1020" alt="5 screenshot-pdf1-password-hash" src="https://github.com/user-attachments/assets/36fe46ae-7eaa-4e66-b6a1-c93ee5426be2" />
 
 ```
 qpdf --password='<recovered password>' --decrypt patient_report_3.pdf report3_open.pdf
 ```
+<img width="1920" height="1022" alt="13 screenshoot-report-password-cracked" src="https://github.com/user-attachments/assets/36345350-14d6-4166-91e3-102dea78ad00" />
+<img width="1920" height="1012" alt="12 screenshot-report3-wordlist-exhauseted" src="https://github.com/user-attachments/assets/dae1ab17-5f09-4272-824f-cd232b5f6fbe" />
+<img width="1920" height="1014" alt="11 screenshot-pdf3-password-hash" src="https://github.com/user-attachments/assets/f23da704-34af-45a3-ba72-2424e92c130d" />
 
 ---
 
@@ -107,7 +123,9 @@ qpdf --password='<recovered password>' --decrypt patient_report_3.pdf report3_op
 4. Downloaded the backup and parsed the `staff` and `shareholders` tables, revealing plaintext salary and shareholder data.
 5. Traced the metadata author field back to a specific staff record, completing the chain of evidence.
 
-<img width="1920" height="955" alt="Exposed backup folder" src="REPLACE-WITH-YOUR-SCREENSHOT-URL" />
+<img width="1920" height="1009" alt="15 screenshoot" src="https://github.com/user-attachments/assets/69b51f2e-27fb-4f28-a909-126c36893a20" />
+<img width="1920" height="487" alt="14 screenshoot-exposed-old-directory" src="https://github.com/user-attachments/assets/36c46cea-aea2-465f-8531-6dff8d87613b" />
+
 
 ---
 
