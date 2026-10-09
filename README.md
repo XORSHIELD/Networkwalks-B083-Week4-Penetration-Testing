@@ -1,4 +1,4 @@
-<img width="1920" height="998" alt="2 screenshot-login-portal" src="https://github.com/user-attachments/assets/9232ef2d-eed4-40cd-812a-30863d7692bb" /># 🔒 Mediroza General Hospital — Black-Box Penetration Test
+# 🔒 Mediroza General Hospital — Black-Box Penetration Test
 
 **A full black-box engagement tracing an attack chain from login bypass to a critical data exposure**
 
