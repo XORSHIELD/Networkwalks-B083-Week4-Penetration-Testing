@@ -123,8 +123,9 @@ qpdf --password='<recovered password>' --decrypt patient_report_3.pdf report3_op
 4. Downloaded the backup and parsed the `staff` and `shareholders` tables, revealing plaintext salary and shareholder data.
 5. Traced the metadata author field back to a specific staff record, completing the chain of evidence.
 
-<img width="1920" height="1009" alt="15 screenshoot" src="https://github.com/user-attachments/assets/69b51f2e-27fb-4f28-a909-126c36893a20" />
-<img width="1920" height="487" alt="14 screenshoot-exposed-old-directory" src="https://github.com/user-attachments/assets/36c46cea-aea2-465f-8531-6dff8d87613b" />
+<img width="1920" height="487" alt="14 screenshoot-exposed-old-directory" src="https://github.com/user-attachments/assets/5069a25d-9253-44de-8104-0b8b029fda67" />
+<img width="1920" height="1009" alt="15 screenshoot" src="https://github.com/user-attachments/assets/744bef36-f38c-4d03-948b-e3554a14265e" />
+
 
 
 ---
